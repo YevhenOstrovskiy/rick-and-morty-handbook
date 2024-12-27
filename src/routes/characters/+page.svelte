@@ -1,7 +1,7 @@
 <script lang="ts">
+  /** @type {{ data: import('./$types').PageServerData }} */
   import { Card } from '~/lib/components/Card/';
   
-  /** @type {{ data: import('./$types').PageServerData }} */
 	let { data } = $props();
 </script>
 

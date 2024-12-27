@@ -5,6 +5,7 @@ characters(page: 1, filter: { }) {
     count
   }
   results {
+    id,
     name, 
     image
   }

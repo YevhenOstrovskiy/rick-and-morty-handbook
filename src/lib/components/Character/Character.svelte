@@ -20,7 +20,6 @@
 		<p><strong>Location:</strong> 
 			<a href={character.location.url}>{character.location.name}</a>
 		</p>
-		<a href={character.url} role="button" class="contrast">View Details</a>
 	</div>
 </article>
 

@@ -8,7 +8,12 @@
 	}
 </script>
 
-<div class="character-card" on:click={handleClick} on:keypress={() => {}} role="button" tabindex="0">
+<div class="character-card" 
+      on:click={handleClick} 
+      on:keypress={() => {}} 
+      role="button" 
+      tabindex="0"
+>
 	<img src={character.image} alt={character.name} />
 	<h2>{character.name}</h2>
 </div>

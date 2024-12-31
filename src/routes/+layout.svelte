@@ -1,5 +1,14 @@
 <script>
 	let { children } = $props();
+  import { currentPage } from '~/lib/components/Pagination/';
+
+  $effect(() => {
+    openFirstPage();
+  });
+
+  const openFirstPage = () => {
+    $currentPage = 1;
+  };
 </script>
 
 <header>
@@ -10,8 +19,8 @@
 		<ul>
 			<li><a href="/">Home</a></li>
 			<li><a href="/about">About</a></li>
-			<li><a href="/settings">Settings</a></li>
-      <li><a href="/characters">Characters</a></li>
+			<li><a href="/episodes" onclick={openFirstPage}>Episodes</a></li>
+      <li><a href="/characters" onclick={openFirstPage}>Characters</a></li>
 		</ul>
 	</nav>
 </header>

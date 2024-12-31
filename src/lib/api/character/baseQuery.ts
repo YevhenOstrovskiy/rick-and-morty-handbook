@@ -9,10 +9,12 @@ export const QUERY = (id: string) => {
         type,
         gender,
         origin {
-          id
+          id,
+          name
         },
         location {
-          id
+          id,
+          name
         },
         image,
         episode {

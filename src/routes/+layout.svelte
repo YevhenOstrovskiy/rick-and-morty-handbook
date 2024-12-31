@@ -18,9 +18,10 @@
 		</ul>
 		<ul>
 			<li><a href="/">Home</a></li>
-			<li><a href="/about">About</a></li>
+      <li><a href="/seasons">Seasons</a></li>
 			<li><a href="/episodes" onclick={openFirstPage}>Episodes</a></li>
       <li><a href="/characters" onclick={openFirstPage}>Characters</a></li>
+			<li><a href="/about">About</a></li>
 		</ul>
 	</nav>
 </header>

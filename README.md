@@ -1,3 +1,5 @@
+You can see link on working version on [`sv`](https://b220a128.rick-and-morty-handbook.pages.dev/)
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).

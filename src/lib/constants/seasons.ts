@@ -13,17 +13,17 @@ export const seasons: Season[] = [
   },
   {
     id: 3,
-    name: 'Season 2',
+    name: 'Season 3',
     image: '/rick_and_morty_season_3_logo.jpg'
   },
   {
     id: 4,
-    name: 'Season 2',
+    name: 'Season 4',
     image: '/rick_and_morty_season_4_logo.jpg'
   },
   {
     id: 5,
-    name: 'Season 2',
+    name: 'Season 5',
     image: '/rick_and_morty_season_5_logo.jpg'
   },
 ]

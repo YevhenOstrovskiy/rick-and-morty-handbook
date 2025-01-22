@@ -1,4 +1,4 @@
-You can see link on working version on [`sv`](https://b220a128.rick-and-morty-handbook.pages.dev/)
+You can see link on working version on [`web site link`](https://b220a128.rick-and-morty-handbook.pages.dev/)
 
 # sv
 

@@ -1,7 +1,6 @@
 <script>
-
-	import { Character } from '~/lib/components/Character/';
-
+  import { Character } from '~/lib/components/Character/';
+	
 </script>
 
 <h1>Welcome to SvelteKit</h1>

@@ -1,10 +1,14 @@
 <script lang="ts">
+    import { goto } from '$app/navigation';
   import type Season from '~/lib/types/season';
+  import { selectedSeasonId } from './seasons.store';
   
 	export let seasons: Season[];
 
   const handleSeasonClick = (id: number) => {
-    console.log(`Season clicked with ID: ${id}`);
+    selectedSeasonId.set(id);
+    selectedSeasonId.update;
+    goto(`seasons/episodes`);
   };
 </script>
 
@@ -12,7 +16,8 @@
   {#each seasons as season}
     <div 
       class="season-item" 
-      on:click={() => handleSeasonClick(season.id)}
+      onclick={() => {handleSeasonClick(season.id)}}
+      onkeypress={() =>{}}
       role="button"
       tabindex="0"
     >

@@ -5,7 +5,6 @@
 	import { selectedSeasonId, episodes } from '~/lib/components/Seasons/seasons.store';
 	import { getAllEpisodes } from '~/lib/api/episodes/getAllEpisodes';
 	import filterEpisodesBySeason from '~/lib/helpers/filterEpisodesBySeason';
-  /** @type {{ data: import('./$types').PageServerData }} */
 
   let epi: Episode[] = [];
   getAllEpisodes().then(e => episodes.set(e));
@@ -13,10 +12,12 @@
     api.getAllEpisodesInSeason(ids)
   .then((e) => {
     epi = e;
+    console.log(epi);
   })
   .catch((error) => {
     throw new Error(error);
   });
+
 </script>
 
 <div><Episodes episodes = {epi}/></div>

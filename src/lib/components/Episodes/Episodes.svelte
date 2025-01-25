@@ -1,7 +1,13 @@
 <script lang="ts">
 	import type Episode from '~/lib/types/episode';
+  import { goto } from '$app/navigation';
   
 	export let episodes: Episode[];
+  
+  const handleEpisodeClick = (id: number) => {
+    console.log('Selected Episode ID:', id);
+    goto(`/episodes/${id}`);
+  };
 </script>
 
 <section class="container">
@@ -16,8 +22,13 @@
         </tr>
       </thead>
       <tbody>
-        {#each episodes as { name, air_date, episode }}
-          <tr>
+        {#each episodes as { id, name, air_date, episode }}
+        <tr class="episode"
+          on:click={() => handleEpisodeClick(id)} 
+          on:keypress={() => {}} 
+          role="button"
+          tabindex="0"
+        >
             <td>{episode}</td>
             <td>{name}</td>
             <td>{air_date}</td>
@@ -46,6 +57,19 @@
 
   td {
     padding: 0.5rem 0;
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+		color: inherit;
+  }
+  
+  tr {
+		color: inherit;
+  }
+
+  .episode {
+    border: 1px solid #ddd;
+		border-radius: 0.5rem;
   }
 
   p {

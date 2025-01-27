@@ -3,7 +3,6 @@
 	
 </script>
 
-<h1>R & M Handbook</h1>
 <Character
 	character={{
 		id: 1,

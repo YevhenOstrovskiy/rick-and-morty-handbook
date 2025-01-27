@@ -5,7 +5,6 @@
 	export let episodes: Episode[];
   
   const handleEpisodeClick = (id: number) => {
-    console.log('Selected Episode ID:', id);
     goto(`/episodes/${id}`);
   };
 </script>

@@ -25,11 +25,6 @@ export async function getAllEpisodes() {
   return await allEpisodes;
 }
 
-export async function getThisEpisodes () {
-  const result = await getAllEpisodes().then(e => e);
-  return result;
-}
-
 const Query = gql`
 query Episodes($page: Int) {
   episodes(page: $page) {
